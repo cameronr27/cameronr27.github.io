@@ -1,0 +1,8 @@
+This week was focused on creating a MySQL server for the expired senior design team. Myself and my partner hugo talked to professor Fitzgerald 
+about which proper directions to follow in order to complete the setup. We were given access to the techlab demo virtual machine which 
+already had mySQL set up. We had to research about the .cnf file and make make changes to it in order for the server to be ran properly.
+Everything seems to be set up correctly but we ran into the same issue that we have with the other virtual machines. Trying to ssh into
+it will not work and even professor Fitzgerald was having issues connecting to it. Hugo and I also had a zoom meeting with professor Lisa
+on creating a virtual machine, during the call she guided us through the steps to create the VM successfully. We still had an issue on 
+using ssh, we are not sure on what could be the issue. During this time I am trying my best to research potential errors and what a 
+possible solution could be. I have been focusing on the /etc environment and network interfaces files to see what I can possibly do.
