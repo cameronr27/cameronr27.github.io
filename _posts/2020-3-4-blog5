@@ -1,0 +1,19 @@
+This week we were able to complete the creation of a virtual server made for the "Expired team." The process had always made sense to me
+on which steps to do in order to create the VM but I needed help on minor things concerning LDAP and specific files located in the /etc path. 
+When creating the new VM we started the regular process by entering all the required information such as ip address, network mask, and 
+ssh installation. Once the required part is done, I entered the <sudo apt-get update && sudo apt-get upgrade> command from the command line
+to ensure the latest packages were installed for our distro. Once that was finished I installed LDAP (Lightweight Directory Access Protocol)
+It allows users to access data from another source. by using the following command < sudo apt install libpam-ldap libnss-ldap nss-updatedb 
+libnss-db nscd > I was brought to GUI that was for entering information that pertains to the expired server. Many popups will come up asking
+for information databases, by entering the following values I was was able to complete this step:
+
+LDAP URI which is needed to access the address and port of a directory server.  LDAP URL = ldaps://sdir.csun.edu is the required value.
+LDAP Version: 3  . This version provides better functionality and is basically an improvement over LDAP version 2.
+Make local Root DB Admin: No. This is optional and preference as to if you want root to be a DB admin
+LDAP database require Login: Yes . Setting this to Yes requires users to login with relevant information. 
+Unprivileged database user: BIND DN: cn=Pioneering,ou=Proxies,ou-Auth,o=csun. This relates to the user and user location in the LDAP directory tree
+Enter bindpw:      The password is used to authenticate LDAP.
+
+Once the LDAP setup is complete you have to start modifying files located in the /etc location. Use the command <sudo nano /etc/ldap.conf
+and uncomment the port line and change it to the appropriate number. Further down in the same file you must uncomment tlscheckpeer and
+change from yes to no
