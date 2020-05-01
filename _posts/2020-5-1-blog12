@@ -1,0 +1,10 @@
+This week we made the final touches for our senior design website. We went through the process of implementing a different navigation bar, various 
+changes to the ui, and inserting non copyright images. We had to do a lot  of non technical tasks at the same time such as communicating
+with all of the groups to get even more detailed info when it comes to the technologies they used to create their project. The project
+section of the website was refined by rescaling the <v-cards> that links to the selected project. We also used href addresses to link
+to everyones github account to the respective page of the team. I was able to create a "go to top" <v-btn> just to add more flair to the 
+website but we decided to not implement it, instead we wanted to keep the website close to the actual CSUN homepage. We updated the <footer>
+component to have the Csun seal and school address to be on all pages by using javascript so we did not have to recreate the same code for
+all pages. The last thing we did was install another library, we used vuex because it allowed us to pass data from one of our created
+parent components. The whole process was enjoyable we both agreed that our methods to the webpage creation not only improved our 
+developing skills,  but we also are now able to work on side projects because of how much we have grown.
